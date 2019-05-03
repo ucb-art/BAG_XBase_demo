@@ -1,0 +1,80 @@
+lib_name: demo_templates
+cell_name: amp_chain_soln
+pins: [ "vout", "vb2", "VDD", "VSS", "vb1", "vmid", "vin" ]
+instances:
+  XCS:
+    lib_name: demo_templates
+    cell_name: amp_cs
+    instpins:
+      vbias:
+        direction: input
+        net_name: "vb1"
+        num_bits: 1
+      vin:
+        direction: input
+        net_name: "vin"
+        num_bits: 1
+      vout:
+        direction: output
+        net_name: "vmid"
+        num_bits: 1
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VDD:
+        direction: inputOutput
+        net_name: "VDD"
+        num_bits: 1
+  XSF:
+    lib_name: demo_templates
+    cell_name: amp_sf_soln
+    instpins:
+      vbias:
+        direction: input
+        net_name: "vb2"
+        num_bits: 1
+      vin:
+        direction: input
+        net_name: "vmid"
+        num_bits: 1
+      vout:
+        direction: output
+        net_name: "vout"
+        num_bits: 1
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VDD:
+        direction: inputOutput
+        net_name: "VDD"
+        num_bits: 1
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN4:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN3:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN6:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN5:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
