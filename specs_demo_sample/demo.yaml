@@ -27,7 +27,7 @@ amp_cs:
 
   testbenches:
     tb_dc:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_dc'
       sch_params:
         dut_conns: {vbias: 'vbias'}
@@ -44,7 +44,7 @@ amp_cs:
         vout_stop: !!float 0.9
         vout_num: 100
     tb_ac_tran:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
         dut_conns: {vbias: 'vbias'}
@@ -83,7 +83,7 @@ amp_sf:
 
   testbenches:
     tb_dc:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_dc'
       sch_params:
         dut_conns: {vbias: 'vbias'}
@@ -100,7 +100,7 @@ amp_sf:
         vout_stop: !!float 0.5
         vout_num: 100
     tb_ac_tran:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
         dut_conns: {vbias: 'vbias'}
@@ -139,7 +139,7 @@ amp_sf_soln:
 
   testbenches:
     tb_dc:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_dc'
       sch_params:
         dut_conns: {vbias: 'vbias'}
@@ -156,7 +156,7 @@ amp_sf_soln:
         vout_stop: !!float 0.5
         vout_num: 100
     tb_ac_tran:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
         dut_conns: {vbias: 'vbias'}
@@ -203,7 +203,7 @@ amp_chain:
     show_pins: True
   testbenches:
     tb_dc:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_dc'
       sch_params:
         dut_conns: {vb1: 'vb1', vb2: 'vb2', vmid: 'vmid'}
@@ -222,7 +222,7 @@ amp_chain:
         vout_stop: !!float 0.4
         vout_num: 100
     tb_ac_tran:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
         dut_conns: {vb1: 'vb1', vb2: 'vb2', vmid: 'vmid'}
@@ -271,7 +271,7 @@ amp_chain_soln:
     show_pins: True
   testbenches:
     tb_dc:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_dc'
       sch_params:
         dut_conns: {vb1: 'vb1', vb2: 'vb2', vmid: 'vmid'}
@@ -290,7 +290,7 @@ amp_chain_soln:
         vout_stop: !!float 0.4
         vout_num: 100
     tb_ac_tran:
-      tb_lib: 'bag_testbenches_ec'
+      tb_lib: 'bag_testbenches'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
         dut_conns: {vb1: 'vb1', vb2: 'vb2', vmid: 'vmid'}
