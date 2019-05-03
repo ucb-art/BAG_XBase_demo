@@ -9,7 +9,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 from matplotlib import ticker
 
-from ckt_dsn_ec.mos.core import MOSDBDiscrete
+from ckt_dsn.mos.core import MOSDBDiscrete
 
 
 def query(vds, vgs, env_list=None, intent='lvt', vbs=0.0):
