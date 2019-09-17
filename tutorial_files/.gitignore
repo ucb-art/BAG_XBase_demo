@@ -1,3 +1,4 @@
 demo_data
 stimuli
 .ipynb_checkpoints
+*.log
