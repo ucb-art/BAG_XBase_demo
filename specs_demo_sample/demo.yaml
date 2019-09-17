@@ -250,7 +250,7 @@ amp_chain_soln:
   sch_cell: 'amp_chain_soln'
   gen_cell: 'AMP_CHAIN'
   layout_package: 'xbase_demo.demo_layout.core'
-  layout_class: 'AmpChain'
+  layout_class: 'AmpChainSoln'
   layout_params:
     cs_params:
       lch: !!float 18e-9
