@@ -158,15 +158,20 @@ def simulate(prj, specs, dsn_name):
         # setup testbench ADEXL state
         print('setting up %s' % tb_gen_cell)
         tb = prj.configure_testbench(impl_lib, tb_gen_cell)
+        print('tb object created!')
         # set testbench parameters values
         for key, val in tb_params.items():
             tb.set_parameter(key, val)
+        print('parameters are set!')
         # set config view, i.e. schematic vs extracted
         tb.set_simulation_view(impl_lib, gen_cell, view_name)
+        print(f'changed the config view to {view_name}!')
         # set process corners
         tb.set_simulation_environments(sim_envs)
+        print(f'set tb environment to {sim_envs}')
         # commit changes to ADEXL state back to database
         tb.update_testbench()
+        print('updated changes to ADEXL')
         # start simulation
         print('running simulation')
         tb.run_simulation()

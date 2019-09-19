@@ -388,7 +388,7 @@ def run_flow(prj, specs, dsn_name):
 
 
 if __name__ == '__main__':
-    spec_fname = 'demo_specs/demo.yaml'
+    spec_fname = 'specs_demo/demo.yaml'
 
     # load specifications from file
     top_specs = read_yaml(spec_fname)
